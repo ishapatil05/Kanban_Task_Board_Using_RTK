@@ -5,7 +5,7 @@ import {
 } from "@reduxjs/toolkit";
 import { selectFilters } from "../filters/filterSlice";
 
-const API_URL = "http://localhost:3001/tasks";
+const API_URL = "https://kanban-task-board-using-rtk-2.onrender.com";
 
 //get data
 export const fetchTasks = createAsyncThunk("tasks/fetchTasks", async () => {
