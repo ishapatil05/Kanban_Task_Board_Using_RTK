@@ -1,0 +1,228 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Set up Redux store",
+      "description": "Configure the store with configureStore and add the tasks slice.",
+      "status": "done",
+      "priority": "high",
+      "createdAt": "2026-02-09T08:00:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Read RTK docs",
+      "description": "Skim createSlice and createAsyncThunk sections.",
+      "status": "done",
+      "priority": "medium",
+      "createdAt": "2026-02-09T09:30:00Z"
+    },
+    {
+      "id": "3",
+      "title": "Install Redux DevTools",
+      "description": "Add the browser extension to inspect actions and state.",
+      "status": "done",
+      "priority": "low",
+      "createdAt": "2026-02-09T10:45:00Z"
+    },
+    {
+      "id": "4",
+      "title": "Wrap app in Provider",
+      "description": "Pass the store to the app root in main.jsx.",
+      "status": "done",
+      "priority": "high",
+      "createdAt": "2026-02-09T11:20:00Z"
+    },
+    {
+      "id": "5",
+      "title": "Build TaskCard component",
+      "description": "Show title, priority badge, and status.",
+      "status": "in-progress",
+      "priority": "medium",
+      "createdAt": "2026-02-10T09:10:00Z"
+    },
+    {
+      "id": "6",
+      "title": "Wire up useSelector",
+      "description": "Read tasks from the store instead of local state.",
+      "status": "in-progress",
+      "priority": "high",
+      "createdAt": "2026-02-10T10:30:00Z"
+    },
+    {
+      "id": "7",
+      "title": "Split tasks into columns",
+      "description": "Group tasks by status into To Do, In Progress, Done.",
+      "status": "in-progress",
+      "priority": "medium",
+      "createdAt": "2026-02-10T11:50:00Z"
+    },
+    {
+      "id": "8",
+      "title": "Write fetchTasks thunk",
+      "description": "GET /tasks with createAsyncThunk.",
+      "status": "in-progress",
+      "priority": "high",
+      "createdAt": "2026-02-10T13:15:00Z"
+    },
+    {
+      "title": "Handle pending state",
+      "description": "Set status to loading in extraReducers.",
+      "priority": "medium",
+      "status": "in-progress",
+      "id": "9"
+    },
+    {
+      "id": "10",
+      "title": "Handle rejected state",
+      "description": "Store the error message when the fetch fails.",
+      "status": "todo",
+      "priority": "medium",
+      "createdAt": "2026-02-11T08:20:00Z"
+    },
+    {
+      "id": "11",
+      "title": "Add loading spinner",
+      "description": "Show a spinner while tasks are loading.",
+      "status": "todo",
+      "priority": "low",
+      "createdAt": "2026-02-11T09:05:00Z"
+    },
+    {
+      "id": "12",
+      "title": "Build AddTaskForm",
+      "description": "Form for title, description, and priority.",
+      "status": "todo",
+      "priority": "high",
+      "createdAt": "2026-02-11T10:15:00Z"
+    },
+    {
+      "id": "13",
+      "title": "Write addTask thunk",
+      "description": "POST a new task and add the result to the store.",
+      "status": "todo",
+      "priority": "high",
+      "createdAt": "2026-02-11T11:30:00Z"
+    },
+    {
+      "id": "14",
+      "title": "Add move-forward button",
+      "description": "Advance a task todo to in-progress to done.",
+      "status": "todo",
+      "priority": "medium",
+      "createdAt": "2026-02-11T13:00:00Z"
+    },
+    {
+      "id": "15",
+      "title": "Write updateTask thunk",
+      "description": "PUT the new status when a task moves.",
+      "status": "todo",
+      "priority": "high",
+      "createdAt": "2026-02-11T14:20:00Z"
+    },
+    {
+      "id": "16",
+      "title": "Show saving state",
+      "description": "Disable buttons while a write is in flight.",
+      "status": "todo",
+      "priority": "low",
+      "createdAt": "2026-02-11T15:35:00Z"
+    },
+    {
+      "id": "17",
+      "title": "Add delete confirmation",
+      "description": "Ask before dispatching the delete thunk.",
+      "status": "todo",
+      "priority": "low",
+      "createdAt": "2026-02-12T08:30:00Z"
+    },
+    {
+      "id": "18",
+      "title": "Write deleteTask thunk",
+      "description": "DELETE /tasks/:id and remove it from the store.",
+      "status": "todo",
+      "priority": "medium",
+      "createdAt": "2026-02-12T09:45:00Z"
+    },
+    {
+      "id": "19",
+      "title": "Create filtersSlice",
+      "description": "Hold search and priority filter state.",
+      "status": "todo",
+      "priority": "high",
+      "createdAt": "2026-02-12T10:50:00Z"
+    },
+    {
+      "id": "20",
+      "title": "Register second reducer",
+      "description": "Add filters alongside tasks in the store.",
+      "status": "todo",
+      "priority": "medium",
+      "createdAt": "2026-02-12T11:40:00Z"
+    },
+    {
+      "id": "21",
+      "title": "Build FilterBar",
+      "description": "Search box and priority dropdown that dispatch filter actions.",
+      "status": "todo",
+      "priority": "medium",
+      "createdAt": "2026-02-12T13:10:00Z"
+    },
+    {
+      "id": "22",
+      "title": "Filter visible tasks",
+      "description": "Read tasks and filters, show only matching cards.",
+      "status": "todo",
+      "priority": "high",
+      "createdAt": "2026-02-12T14:25:00Z"
+    },
+    {
+      "id": "23",
+      "title": "Export named selectors",
+      "description": "Move inline selectors into selectAllTasks and selectFilters.",
+      "status": "todo",
+      "priority": "low",
+      "createdAt": "2026-02-13T08:15:00Z"
+    },
+    {
+      "id": "24",
+      "title": "Add column count header",
+      "description": "Show how many tasks are in each column.",
+      "status": "todo",
+      "priority": "low",
+      "createdAt": "2026-02-13T09:20:00Z"
+    },
+    {
+      "id": "25",
+      "title": "Memoize with createSelector",
+      "description": "Compute the filtered list with a memoized selector.",
+      "status": "todo",
+      "priority": "medium",
+      "createdAt": "2026-02-13T10:35:00Z"
+    },
+    {
+      "id": "26",
+      "title": "Split into components",
+      "description": "Board, Column, TaskCard, AddTaskForm, FilterBar.",
+      "status": "todo",
+      "priority": "medium",
+      "createdAt": "2026-02-13T11:50:00Z"
+    },
+    {
+      "id": "27",
+      "title": "Test refresh persistence",
+      "description": "Confirm changes survive a page reload.",
+      "status": "todo",
+      "priority": "high",
+      "createdAt": "2026-02-13T13:30:00Z"
+    },
+    {
+      "id": "28",
+      "title": "Write the README",
+      "description": "Setup steps, scripts, and a short architecture note.",
+      "status": "todo",
+      "priority": "low",
+      "createdAt": "2026-02-13T14:45:00Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
