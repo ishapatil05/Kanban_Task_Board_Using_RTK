@@ -9,7 +9,7 @@ const API_URL = "https://kanban-task-board-using-rtk-2.onrender.com";
 
 //get data
 export const fetchTasks = createAsyncThunk("tasks/fetchTasks", async () => {
-  const response = await fetch(API_URL);
+  const response = await fetch(`${API_URL}/tasks`);
   if (!response.ok) {
     throw new Error("Failed to fetch tasks");
   }
