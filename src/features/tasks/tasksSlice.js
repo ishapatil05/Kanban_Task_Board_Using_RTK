@@ -20,7 +20,7 @@ export const fetchTasks = createAsyncThunk("tasks/fetchTasks", async () => {
 
 //post for add task
 export const addTask = createAsyncThunk("tasks/addTask", async (task) => {
-  const response = await fetch(API_URL, {
+  const response = await fetch(`${API_URL}/tasks`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -40,7 +40,7 @@ export const addTask = createAsyncThunk("tasks/addTask", async (task) => {
 export const updateTask = createAsyncThunk(
   "tasks/updateTask",
   async ({ id, title, description, priority, status }) => {
-    const response = await fetch(`${API_URL}/${id}`, {
+    const response = await fetch(`${API_URL}/tasks/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -64,7 +64,7 @@ export const updateTask = createAsyncThunk(
 
 //delete task
 export const deleteTask = createAsyncThunk("tasks/deleteTask", async (id) => {
-  const response = await fetch(`${API_URL}/${id}`, {
+  const response = await fetch(`${API_URL}/tasks/${id}`, {
     method: "DELETE",
   });
 
