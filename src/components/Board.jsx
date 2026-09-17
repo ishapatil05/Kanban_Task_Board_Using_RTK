@@ -35,7 +35,9 @@ const Board = () => {
 
   return (
     <>
+    
       <div className="board">
+               
         {tasks.length === 0 ? (
           <h2 className="no-tasks">No tasks</h2>
         ) : (

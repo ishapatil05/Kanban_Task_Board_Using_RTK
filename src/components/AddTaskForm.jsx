@@ -39,6 +39,7 @@ const AddTaskForm = () => {
   };
   return (
     <div>
+       <h1>Kanban Task Board</h1>
       <form action="" onSubmit={handleSubmit}>
         <h2>Add Task</h2>
 
